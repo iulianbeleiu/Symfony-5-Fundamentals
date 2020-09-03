@@ -83,6 +83,8 @@ Shel Silverstein
 Show service configuration options:
 ` php bin/console config:dump KnpMarkdownBundle`
 
+Full list of services in container: `php bin/console debug:container`
+
 ## Thanks!
 
 And as always, thanks so much for your support and letting
