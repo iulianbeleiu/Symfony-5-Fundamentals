@@ -91,8 +91,11 @@ System info and env variables: ` php bin/console about`
 
 Set local secret env variable: `php bin/console secret:set SENTRY_DSN
 
-Set env variable for prod: ` php bin/console secret:set SENTRY_DSN --env=prod`
-`
+Set env variable for prod: ` php bin/console secret:set SENTRY_DSN --env=prod``
+
+List all secret variables: `php bin/console secret:list`
+
+
 
 
 
