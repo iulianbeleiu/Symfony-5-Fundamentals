@@ -79,6 +79,10 @@ I've had to make myself.
 
 Shel Silverstein
 
+## Commands
+Show service configuration options:
+` php bin/console config:dump KnpMarkdownBundle`
+
 ## Thanks!
 
 And as always, thanks so much for your support and letting
