@@ -89,6 +89,11 @@ List of service instance (logger). For named autowiring: `php bin/console debug:
 
 System info and env variables: ` php bin/console about`
 
+Set local secret env variable: `php bin/console secret:set SENTRY_DSN
+
+Set env variable for prod: ` php bin/console secret:set SENTRY_DSN --env=prod`
+`
+
 
 
 ## Thanks!
