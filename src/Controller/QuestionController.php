@@ -3,12 +3,28 @@
 namespace App\Controller;
 
 use App\Service\MarkdownHelper;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class QuestionController extends AbstractController
 {
+    /**
+     * @var LoggerInterface
+     */
+    private $logger;
+    /**
+     * @var bool
+     */
+    private $isDebug;
+
+    public function __construct(LoggerInterface $logger, bool $isDebug)
+    {
+        $this->logger = $logger;
+        $this->isDebug = $isDebug;
+    }
+
     /**
      * @Route("/", name="app_homepage")
      * @return Response
@@ -33,6 +49,10 @@ class QuestionController extends AbstractController
      */
     public function show($slug, MarkdownHelper $markdownHelper)
     {
+        if ($this->isDebug) {
+            $this->logger->info('We are in debug mode!');
+        }
+
         $answers = [
             'Make sure your cat is sitting `purrrfectly` still 🤣',
             'Honestly, I like furry shoes better than MY cat',
