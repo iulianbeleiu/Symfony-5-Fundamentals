@@ -85,6 +85,9 @@ Show service configuration options:
 
 Full list of services in container: `php bin/console debug:container`
 
+List of service instance (logger). For named autowiring: `php bin/console debug:autowiring log
+`
+
 ## Thanks!
 
 And as always, thanks so much for your support and letting
