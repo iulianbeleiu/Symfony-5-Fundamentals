@@ -1,11 +1,6 @@
-# Tutorials, Friendship & Symfony5
-
-Well hi there! This repository holds the code and script
-for the [Symfony5 Tutorials](https://symfonycasts.com/tracks/symfony) on SymfonyCasts.
+Symfony5 Fundamentals: Services, Config & Environments
 
 ## Setup
-
-If you've just downloaded the code, congratulations!!
 
 To get it working, follow these steps:
 
@@ -59,26 +54,6 @@ installed and then run:
 yarn install
 yarn encore dev --watch
 ```
-
-## Have Ideas, Feedback or an Issue?
-
-If you have suggestions or questions, please feel free to
-open an issue on this repository or comment on the course
-itself. We're watching both :).
-
-## Magic
-
-Sandra's seen a leprechaun,
-Eddie touched a troll,
-Laurie danced with witches once,
-Charlie found some goblins' gold.
-Donald heard a mermaid sing,
-Susy spied an elf,
-But all the magic I have known
-I've had to make myself.
-
-Shel Silverstein
-
 ## Commands
 Show service configuration options:
 ` php bin/console config:dump KnpMarkdownBundle`
@@ -99,12 +74,4 @@ Create a Symfony command: `php bin/console make:command`
 
 View command description: `php bin/console app:random-spell --help`
 
-
-
-
-## Thanks!
-
-And as always, thanks so much for your support and letting
-us do what we love!
-
-<3 Your friends at SymfonyCasts
+Make a Twig Extension: `php bin/console make:twig-extension`
