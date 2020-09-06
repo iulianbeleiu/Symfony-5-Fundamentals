@@ -97,6 +97,9 @@ List all secret variables: `php bin/console secret:list`
 
 Create a Symfony command: `php bin/console make:command`
 
+View command description: `php bin/console app:random-spell --help`
+
+
 
 
 ## Thanks!
